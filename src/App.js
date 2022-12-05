@@ -2,31 +2,25 @@ import styled from "styled-components";
 
 const Father = styled.div`
   display: flex;
-`
-
-const BoxOne = styled.div`
-  background-color: teal;
-  width: 100px;
-  height: 100px;
-`
-const BoxTwo = styled.div`
-  background-color: tomato;
-  width: 100px;
-  height: 100px;
-`
+`;
 const Text = styled.span`
   color: white;
-`
+`;
+
+const Input = styled.input.attrs({ required: true })`
+  background-color: tomato;
+`;
 function App() {
   return (
     <>
       <Father>
-        <BoxOne>
-          <Text>
-            Hello
-          </Text>
-        </BoxOne>
-        <BoxTwo/>
+        <Text>Hello</Text>
+        <Input/>
+        <Input/>
+        <Input/>
+        <Input/>
+        <Input/>
+        <Input/>
       </Father>
     </>
   );
